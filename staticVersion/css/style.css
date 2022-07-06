@@ -5,6 +5,7 @@ body{
     padding: 0px;
     margin: 0px;
     background: #f6f6f6;
+    font-family: 'Lora','serif';
 }
 header{
     background: #008489;
@@ -20,6 +21,7 @@ header .logo{
 }
 header .logoText{
     margin: 10px;
+    font-family: 'Candal', 'serif';
 }
 header .logoText span{
     color: #0becf4;
