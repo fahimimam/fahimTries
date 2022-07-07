@@ -28,9 +28,58 @@ header .logoText span{
 }
 header ul {
     float: right;
-    
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*border: 1px solid red;*/
 }
+header ul li{
+    float: left;
+    position: relative;
+    width: inherit;
+}
+header ul li ul{
+    position: absolute;
+    background: white;
+    display: none;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li a{
+    text-align: center;
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li i.dropIcon{
+    margin-left: 5px;
+    font-size: .8em;
+}
+header ul li i.fa-user{
+    margin-right: 5px;
+}
+header ul li a:hover{
+    background: #013a3c;
+    transition: 2s;
+}
+header ul li ul li a{
+    padding: 10px;
+    color: rgb(126, 121, 121);
+}
+header ul li ul li a.logout{
+    color: red;
+}
+header ul li ul li a:hover{
+    color: whitesmoke;
+    background-color: rgb(138, 135, 135);
+    transition: 0.5s;
+}
+
 header .menuToggle{
     display: none;
 }
-
