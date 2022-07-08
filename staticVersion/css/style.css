@@ -33,6 +33,9 @@ header ul {
     list-style: none;
     /*border: 1px solid red;*/
 }
+.showing{
+    height: 100em;
+}
 header ul li{
     float: left;
     position: relative;
@@ -82,4 +85,43 @@ header ul li ul li a:hover{
 
 header .menuToggle{
     display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 725px){
+    header{
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background-color: #008489;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: inherit;
+    }
+    .dropIcon{
+        display: none;
+    }
+    header ul li ul li a{
+        color: white;
+    }
+    header .menuToggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        margin-top: 8px;
+        font-size: 1.9em;
+    }
+    header .logo{
+        margin-left: .5em;
+    }
 }
