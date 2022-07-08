@@ -34,7 +34,7 @@ header ul {
     /*border: 1px solid red;*/
 }
 .showing{
-    height: 100em;
+    max-height: 100em;
 }
 header ul li{
     float: left;
@@ -106,6 +106,9 @@ header .menuToggle{
         display: block;
         width: 100%;
         background-color: inherit;
+    }
+    header ul li ul li a:hover{
+        background: #013a3c;
     }
     .dropIcon{
         display: none;
